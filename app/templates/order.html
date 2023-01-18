@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <link rel="stylesheet" href="../static/css/order.css">
+    
+    <head>
+        <title>Orders</title>
+        
+    </head>
+    <body>
+        
+        <div class="navbar">
+            <div class="title">
+                <h2 class="logo" id="Netmeds">G-meds</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="/home">HOME</a></li>
+                    
+                    <li><a href="#">ORDERS</a></li>
+                    <li><a href="/cart.html">CART</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="/">LOGOUT</a></li>
+                </ul>
+            </div>  
+        </div>
+        
+
+        <div class="orders" id="orders">
+            <form action="/home" method="POST">
+                <Button type="submit"  id="back" name="pay">Back</Button>
+            </form>
+            <h2>Orders:</h2>
+        <table>
+            <tr>
+                <th>Customer_id</th>
+                <th>Order Id</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>email</th>
+                <th>Status</th>
+            </tr>
+            {% for item in data %}
+            <tr>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+                <td>{{item[3]}}</td>
+                <td>{{item[4]}}</td>
+                <td>{{item[5]}}</td>
+                
+                
+            </tr>
+            {% endfor %}
+        </table>
+            
+            
+        </div>
+        
+    </body>
+    </html>

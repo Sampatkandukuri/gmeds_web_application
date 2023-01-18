@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="../static/css/netmeds_pay.css">
+    </head>
+
+    <body>
+        <title>Payment</title>
+        
+        <div class="navbar" id="navbar">
+            <div class="title" id="title">
+                <h2 class="logo" id="Netmeds">G-meds</h2>
+            </div>
+        
+            <div class="menu" id="menu">
+                <ul id="navbut">
+                    <li id="navbutli"><a href="/home">HOME</a></li>
+                    <!--<li><a href="#">ABOUT</a></li>-->
+                    <li id="navbutli"><a href="#">PRESCRIPTION</a></li>
+                    <li id="navbutli"><a href="cart.html">CART</a></li>
+                   <li><a href="netmeds_login.html">LOGIN</a></li>
+                </ul>
+            </div>
+            <form action="">
+                <input type="text" id="search" name="search" placeholder="     Search...">
+            </form>
+        </div>
+
+        <div class="payment" id="payment">
+            <h2>Payment:</h2>
+            <form action="/orders" method="POST">
+                <p id="details">Name:</p>
+                <input type="text" id="inputspace" name="fname">
+                <p id="details">Email:</p>
+                <input type="text" id="inputspace" name="email">
+                <p id="details">Address:</p>
+                <input type="text" id="inputspace" name="address">
+                <p id="details">City:</p>
+                <input type="text" id="inputspace" name="city">
+                <p id="details">Name on Card:</p>
+                <input type="text" id="inputspace" name="cardname">
+                <p id="details">Card Number:</p>
+                <input type="text" id="inputspace" name="cardnumber">
+                <p id="details">Exp month:</p>
+                <input type="text" id="inputspace" name="expmonth">
+                <p id="details">Exp year:</p>
+                <input type="text" id="inputspace" name="expyear">
+                <p id="details">CVV:</p>
+                <input type="text" id="inputspace" name="cvv">
+                <input type="submit" name="order" id="order" value="Place order">
+            </form>
+        </div>
+
+    </body>
+</html>

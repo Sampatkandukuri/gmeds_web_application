@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="../static/css/homepage.css">
+    </head>
+
+    <style>
+        
+    </style>
+
+    <body>
+        <title>Homepage</title>
+        
+        <div class="navbar" id="navbar">
+            <div class="title" id="title">
+                <h2 class="logo" id="Netmeds">G-meds</h2>
+            </div>
+        
+            <div class="menu" id="menu">
+                <ul id="navbut">
+                    <li id="navbutli"><a href="/home">HOME</a></li>
+                    <!--<li><a href="#">ABOUT</a></li>-->
+                    <li id="navbutli"><a href="/order.html">ORDERS</a></li>
+                    <li id="navbutli"><a href="/cart.html">CART</a></li>
+                   <li><a href="/">LOGOUT</a></li>
+                </ul>
+            </div>
+            <form action="">
+                <input type="text" id="search" name="search" placeholder="     Search...">
+            </form>
+        </div>
+
+
+    
+        <div class="pro_set1">
+            <form action="/add1" method="POST">
+                <div class="products" id="pro1">
+                    <img src="/static/thermo.jpg" width="150px" class="product_image">
+                    <h3 class="price_heading" name="pr1">Thermometer</h3>
+                    <p class="price_heading" name="co1">Rs:200</p>
+                    <button type="submit" id="cartbutton" name="add1" onClick="alert('Successfully added to cart')">Add to cart</button>
+                </div>
+            </form>
+            <form action="/add2" method="POST">
+                <div class="products" id="pro2">
+                    <img src="/static/dolo2.jpg" width="150px" class="product_image">
+                    <h3 class="price_heading" name="pr2">Dolo-650mg</h3>
+                    <p class="price_heading" name="co2">Rs:75</p>
+                    <button type="submit" id="cartbutton" name="add2" onClick="alert('Successfully added to cart')">Add to cart</button>
+                </div>
+            </form>
+            <form action="/add3" method="POST">
+                <div class="products" id="pro3">
+                    <img src="/static/ben.webp" width="150px" class="product_image">
+                    <h3 class="price_heading" name="pr3">Benadryl Cough Syrup(50ml)</h3>
+                    <p class="price_heading" name="co3">Rs:250</p>
+                    <button type="submit" id="cartbutton" name="add3" onClick="alert('Successfully added to cart')">Add to cart</button>
+                </div>
+            </form>
+            <form action="/add4" method="POST">    
+                <div class="products" id="pro4">
+                    <img src="/static/band.webp" width="150px" class="product_image">
+                    <h3 class="price_heading" name="pr4">Band-aid(Assorted 100)</h3>
+                    <p class="price_heading" name="co4">Rs:100</p>
+                    <button type="submit" id="cartbutton" name="add4" onClick="alert('Successfully added to cart')">Add to cart</button>                </div>
+            </form>
+
+        </div>
+        <div class="pro_set2">
+            <form action="/add5" method="POST">
+                <div class="products" id="pro1">
+                    <img src="/static/amo.webp" width="150px" class="product_image">
+                    <h3 class="price_heading" name="pr5">Amoxicillin Capsules IP,500mg</h3>
+                    <p class="price_heading" name="co5">Rs:200</p>
+                    <button type="submit" id="cartbutton" name="add5" onClick="alert('Successfully added to cart')">Add to cart</button>
+                </div>
+            </form>
+            <form action="/add6" method="POST">
+                <div class="products" id="pro2">
+                    <img src="/static/azi.webp" width="150px" class="product_image">
+                    <h3 class="price_heading" name="pr6">Azithromycin Tablet IP, 20 X 3 Tablets</h3>
+                    <p class="price_heading" name="co6">Rs:70</p>
+                    <button type="submit" id="cartbutton" name="add6" onClick="alert('Successfully added to cart')">Add to cart</button>   
+                </div>
+            </form>
+            <form action="/add7" method="POST">
+                <div class="products" id="pro3">
+                    <img src="/static/mask.webp" width="150px" class="product_image">
+                    <h3 class="price_heading" name="pr7">Reusable Asiapacific N95 Mask</h3>
+                    <p class="price_heading" name="co7">Rs:20</p>
+                    <button type="submit" id="cartbutton" name="add7" onClick="alert('Successfully added to cart')">Add to cart</button>    
+                </div>
+            </form>
+            <form action="/add8" method="POST">
+                <div class="products" id="pro4">
+                    <img src="/static/cit.webp" width="150px" class="product_image">
+                    <h3 class="price_heading" name="pr8">Cetirizine Tablet 10mg </h3>
+                    <p class="price_heading" name="co8">Rs:349</p>
+                    <button type="submit" id="cartbutton" name="add8" onClick="alert('Successfully added to cart')">Add to cart</button>      
+                </div>
+            </form>
+        </div>
+    
+        
+        <!--
+        <div class="cart" id="cart">
+            <div class="title">CART</div>
+            <div id="title"></div>
+        </div>
+        -->
+
+
+        
+        
+
+    </body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="../static/css/netmeds_cart.css">
+    </head>
+
+    <body>
+        <title>Cart</title>
+        
+        <div class="navbar" id="navbar">
+            <div class="title" id="title">
+                <h2 class="logo" id="Netmeds">G-meds</h2>
+            </div>
+        
+            <div class="menu" id="menu">
+                <ul id="navbut">
+                    <li id="navbutli"><a href="/home">HOME</a></li>
+                    <!--<li><a href="#">ABOUT</a></li>-->
+                    <li id="navbutli"><a href="/order.html">ORDERS</a></li>
+                    <li id="navbutli"><a href="cart.html">CART</a></li>
+                   <li><a href="/">LOGOUT</a></li>
+                </ul>
+            </div>
+            <form action="">
+                <input type="text" id="search" name="search" placeholder="     Search...">
+            </form>
+        </div>
+
+        <div class="cartitems" id="cartitems">
+            <form action="/home" method="POST">
+                <Button type="submit"  id="back" name="pay">Back</Button>
+            </form>
+            <h2>Cart:</h2>
+        <table>
+            <tr>
+                <th>Product name</th>
+                <th>Price</th>
+            </tr>
+            {% for item in data %}
+            <tr>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                
+            </tr>
+            {% endfor %}
+        </table>
+            
+        <form action="/clear" method="POST">
+            <input type="submit" value="Clear" id="clear" name="pay">
+        </form>
+
+            <form action="/payment" method="POST">
+                <input type="submit" value="Proceed to pay" id="pay" name="pay">
+            </form>
+            
+        </div>
+
+    </body>
+</html>
